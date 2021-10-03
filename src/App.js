@@ -8,6 +8,7 @@ import Tmdb from './Tmdb';
 import MovieRow from './components/MovieRow';
 import FeaturedMovie from './components/FeaturedMovie';
 import Header from './components/Header';
+import Faq from './components/Faq/Faq';
 
 export default () => {
 
@@ -64,9 +65,11 @@ export default () => {
 
         {movieList.length <= 0 && 
       <div className='loading'>
-        <img src="https://i.gifer.com/origin/36/36527397c208b977fa3ef21f68c0f7b2.gif" alt='Carregando' />
+        <img src="https://i.gifer.com/origin/36/36527397c208b977fa3ef21f68c0f7b2.gif" alt='Loading' />
       </div>
       }
+
+    <Faq />
   </div>
   );
 }

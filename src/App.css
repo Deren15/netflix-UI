@@ -39,3 +39,65 @@ a{
     align-items: center;
     
 }
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.sec-5{
+    width: 100%;
+    flex-direction: column;
+    background: #111111;
+    margin-top: 10px;
+    color: white;
+}
+.sec-5 h1{
+    padding-top: 5%;
+}
+
+.questions{
+    width: 70%;
+    margin: auto;
+}
+.question , .ans{
+    width: 100%;
+    height: 65px;
+    background: #303030;
+    margin-top: 20px;
+    justify-content: flex-start;
+    font-size: 1.4rem;
+    padding-left: 20px;
+    cursor: pointer;
+
+}
+.question{
+    position: relative;
+}
+.question p{
+    width: 90%;
+}
+.question span{
+    width: 10%;
+}
+.sec-5{
+    width: 100%;
+    padding-bottom: 4rem;
+}
+
+.ans{
+    display: none;
+    transition: 0.3s ease;
+}
+
+.show{
+    display: block;
+    height: auto;
+    transition: 0.3s ease;
+    padding: 1.8rem;
+}
+
+.rotate{
+    transform: rotate(45deg);
+}
